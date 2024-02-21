@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.header h1{
+    font-size: 30em;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+.chess-board td{
+  height: 55px;
+  width: 55px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.chess-board .blank_th{
+  border: 0px;
+  background-color: white;
+  text-align: center;
+  height: 10px;
+  width: 10px;
+  font-size: 50px;
+}
+
+.chess-board tr:nth-child(odd) td:nth-child(odd){
+  background-color: #F0D9B5;
+}
+
+.chess-board tr:nth-child(odd) td:nth-child(even){
+  background-color: #C6A386;
+}
+
+.chess-board tr:nth-child(even) td:nth-child(odd){
+  background-color: #C6A386;
+}
+
+.chess-board tr:nth-child(even) td:nth-child(even){
+  background-color: #F0D9B5;
+}
+
+.chess-board img{
+  scale: 500%;
+}
+
+.footer{
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  justify-content: flex-end;
+  display: flex;
+  padding: 50px;
+  padding-bottom: 10%;
+  max-width: 100%;
+}
+
+.footer #credit{
+  color: #000;
+  font-size: 100px;
+}
+
+.footer #cover{
+  background-color: #D9D9D9;
+  display: inline;
+  position: relative;
+  transition: 1.5s;
+  padding: 80px 500px;
+  right: 575px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<HTML lang="en">
+  <HEAD>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <LINK rel="icon" href="resources\chess_pieces\horse_white.svg"/>
+    <LINK rel="stylesheet" href="style.css"/>
+    <LINK rel="preconnect" href="https://fonts.googleapis.com"/>
+    <LINK rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <LINK href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"/>
+    <TITLE>Chess</TITLE>
+    <SCRIPT src="script.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <DIV class="header">
+      <H1>Chess</H1>
+    </DIV>
+
+    <DIV class="main">
+      <DIV class="chess-board">
+        <TABLE border="1px" cellspacing="0px" height="2500px" width="2500px">
+          <TR>
+            <TH class="blank_th">8</TH>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\rook_black.svg" id="rook_black_a8"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\horse_black.svg" id="horse_black_b8"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\elephant_black.svg" id="elephant_black_c8"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\queen_black.svg" id="queen_black_d8"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\king_black.svg" id="king_black_e8"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\elephant_black.svg" id="elephant_black_f8"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\horse_black.svg" id="horse_black_g8"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\rook_black.svg" id="rook_black_h8"/></TD>
+          </TR>
+
+          <TR>
+            <TH class="blank_th">7</TH>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\pawn_black.svg" id="pawn_black_a7"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\pawn_black.svg" id="pawn_black_b7"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\pawn_black.svg" id="pawn_black_c7"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\pawn_black.svg" id="pawn_black_d7"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\pawn_black.svg" id="pawn_black_e7"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\pawn_black.svg" id="pawn_black_f7"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\pawn_black.svg" id="pawn_black_g7"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG draggable="false" src="resources\chess_pieces\pawn_black.svg" id="pawn_black_h7"/></TD>
+          </TR>
+
+          <TR>
+            <TH class="blank_th">6</TH>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+          </TR>
+
+          <TR>
+            <TH class="blank_th">5</TH>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+          </TR>
+
+          <TR>
+            <TH class="blank_th">4</TH>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+          </TR>
+
+          <TR>
+            <TH class="blank_th">3</TH>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"></TD>
+          </TR>
+
+          <TR>
+            <TH class="blank_th">2</TH>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\pawn_white.svg" id="pawn_white_a2"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\pawn_white.svg" id="pawn_white_b2"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\pawn_white.svg" id="pawn_white_c2"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\pawn_white.svg" id="pawn_white_d2"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\pawn_white.svg" id="pawn_white_e2"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\pawn_white.svg" id="pawn_white_f2"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\pawn_white.svg" id="pawn_white_g2"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\pawn_white.svg" id="pawn_white_h2"/></TD>
+          </TR>
+
+          <TR>
+            <TH class="blank_th">1</TH>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\rook_white.svg" id="rook_white_a1"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\horse_white.svg" id="horse_white_b1"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\elephant_white.svg" id="elephant_white_c1"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\queen_white.svg" id="queen_white_d1"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\king_white.svg" id="king_white_e1"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\elephant_white.svg" id="elephant_white_f1"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\horse_white.svg" id="horse_white_g1"/></TD>
+            <TD ondragover="allowDrop(event)" ondrop="drop(event)"><IMG ondragstart="drag(event)" src="resources\chess_pieces\rook_white.svg" id="rook_white_h1"/></TD>
+          </TR>
+
+          <TR>
+            <TH class="blank_th">&nbsp;</TH>
+            <TH class="blank_th">A</TH>
+            <TH class="blank_th">B</TH>
+            <TH class="blank_th">C</TH>
+            <TH class="blank_th">D</TH>
+            <TH class="blank_th">E</TH>
+            <TH class="blank_th">F</TH>
+            <TH class="blank_th">G</TH>
+            <TH class="blank_th">H</TH>
+          </TR>
+        </TABLE>
+      </DIV>
+    </DIV>
+
+    <DIV class="footer">
+      <P><SPAN id ="credit" onmouseover="showSourceCodeCredentials()" onmouseout="hideSourceCodeCredentials()">@Kuriyaachan</SPAN><SPAN id="cover"></SPAN><P>
+    </DIV>
+  </BODY>
+</HTML>
